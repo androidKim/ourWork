@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC17E0922250970F00704486 /* mainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17E0912250970F00704486 /* mainTabbarViewController.swift */; };
+		DC17E0932250970F00704486 /* mainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17E0912250970F00704486 /* mainTabbarViewController.swift */; };
+		DC17E0942250970F00704486 /* mainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17E0912250970F00704486 /* mainTabbarViewController.swift */; };
+		DC17E0A42250AD4400704486 /* baseline_people_black_24pt_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC17E0A12250AD4400704486 /* baseline_people_black_24pt_2x.png */; };
+		DC17E0A52250AD4400704486 /* baseline_people_black_24pt_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC17E0A22250AD4400704486 /* baseline_people_black_24pt_3x.png */; };
+		DC17E0A62250AD4400704486 /* baseline_people_black_24pt_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC17E0A32250AD4400704486 /* baseline_people_black_24pt_1x.png */; };
+		DC17E0AA2250AD5B00704486 /* baseline_list_black_24pt_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC17E0A72250AD5A00704486 /* baseline_list_black_24pt_3x.png */; };
+		DC17E0AB2250AD5B00704486 /* baseline_list_black_24pt_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC17E0A82250AD5A00704486 /* baseline_list_black_24pt_1x.png */; };
+		DC17E0AC2250AD5B00704486 /* baseline_list_black_24pt_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC17E0A92250AD5A00704486 /* baseline_list_black_24pt_2x.png */; };
+		DC17E0AE2250B4A600704486 /* tabAddWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17E0AD2250B4A600704486 /* tabAddWorkViewController.swift */; };
+		DC17E0B22250B89500704486 /* baseline_add_alarm_black_24pt_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC17E0AF2250B89500704486 /* baseline_add_alarm_black_24pt_1x.png */; };
+		DC17E0B32250B89500704486 /* baseline_add_alarm_black_24pt_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC17E0B02250B89500704486 /* baseline_add_alarm_black_24pt_2x.png */; };
+		DC17E0B42250B89500704486 /* baseline_add_alarm_black_24pt_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC17E0B12250B89500704486 /* baseline_add_alarm_black_24pt_3x.png */; };
 		DCEA56C2224FDEAF0039DAA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA56C1224FDEAF0039DAA5 /* AppDelegate.swift */; };
 		DCEA56C7224FDEAF0039DAA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEA56C5224FDEAF0039DAA5 /* Main.storyboard */; };
 		DCEA56CA224FDEAF0039DAA5 /* ourWork.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCEA56C8224FDEAF0039DAA5 /* ourWork.xcdatamodeld */; };
@@ -36,6 +49,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC17E0912250970F00704486 /* mainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTabbarViewController.swift; sourceTree = "<group>"; };
+		DC17E0A12250AD4400704486 /* baseline_people_black_24pt_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_people_black_24pt_2x.png; sourceTree = "<group>"; };
+		DC17E0A22250AD4400704486 /* baseline_people_black_24pt_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_people_black_24pt_3x.png; sourceTree = "<group>"; };
+		DC17E0A32250AD4400704486 /* baseline_people_black_24pt_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_people_black_24pt_1x.png; sourceTree = "<group>"; };
+		DC17E0A72250AD5A00704486 /* baseline_list_black_24pt_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_list_black_24pt_3x.png; sourceTree = "<group>"; };
+		DC17E0A82250AD5A00704486 /* baseline_list_black_24pt_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_list_black_24pt_1x.png; sourceTree = "<group>"; };
+		DC17E0A92250AD5A00704486 /* baseline_list_black_24pt_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_list_black_24pt_2x.png; sourceTree = "<group>"; };
+		DC17E0AD2250B4A600704486 /* tabAddWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabAddWorkViewController.swift; sourceTree = "<group>"; };
+		DC17E0AF2250B89500704486 /* baseline_add_alarm_black_24pt_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_add_alarm_black_24pt_1x.png; sourceTree = "<group>"; };
+		DC17E0B02250B89500704486 /* baseline_add_alarm_black_24pt_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_add_alarm_black_24pt_2x.png; sourceTree = "<group>"; };
+		DC17E0B12250B89500704486 /* baseline_add_alarm_black_24pt_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_add_alarm_black_24pt_3x.png; sourceTree = "<group>"; };
 		DCEA56BE224FDEAF0039DAA5 /* ourWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ourWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCEA56C1224FDEAF0039DAA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCEA56C6224FDEAF0039DAA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,9 +102,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC17E0952250A8E200704486 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				DC17E0AF2250B89500704486 /* baseline_add_alarm_black_24pt_1x.png */,
+				DC17E0B02250B89500704486 /* baseline_add_alarm_black_24pt_2x.png */,
+				DC17E0B12250B89500704486 /* baseline_add_alarm_black_24pt_3x.png */,
+				DC17E0A82250AD5A00704486 /* baseline_list_black_24pt_1x.png */,
+				DC17E0A92250AD5A00704486 /* baseline_list_black_24pt_2x.png */,
+				DC17E0A72250AD5A00704486 /* baseline_list_black_24pt_3x.png */,
+				DC17E0A32250AD4400704486 /* baseline_people_black_24pt_1x.png */,
+				DC17E0A12250AD4400704486 /* baseline_people_black_24pt_2x.png */,
+				DC17E0A22250AD4400704486 /* baseline_people_black_24pt_3x.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		DC17E0992250A92C00704486 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DCEA56F2224FE5880039DAA5 /* tabWrokListViewContoller.swift */,
+				DCEA56F4224FE5DC0039DAA5 /* tabPeopleViewController.swift */,
+				DC17E0912250970F00704486 /* mainTabbarViewController.swift */,
+				DC17E0AD2250B4A600704486 /* tabAddWorkViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DC17E09A2250A93900704486 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DC17E0992250A92C00704486 /* ViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		DCEA56B5224FDEAF0039DAA5 = {
 			isa = PBXGroup;
 			children = (
+				DC17E0952250A8E200704486 /* res */,
 				DCEA56C0224FDEAF0039DAA5 /* ourWork */,
 				DCEA56D8224FDEAF0039DAA5 /* ourWorkTests */,
 				DCEA56E3224FDEAF0039DAA5 /* ourWorkUITests */,
@@ -101,14 +161,13 @@
 		DCEA56C0224FDEAF0039DAA5 /* ourWork */ = {
 			isa = PBXGroup;
 			children = (
+				DC17E09A2250A93900704486 /* UI */,
 				DCEA56C1224FDEAF0039DAA5 /* AppDelegate.swift */,
 				DCEA56C5224FDEAF0039DAA5 /* Main.storyboard */,
 				DCEA56CB224FDEAF0039DAA5 /* Assets.xcassets */,
 				DCEA56CD224FDEAF0039DAA5 /* LaunchScreen.storyboard */,
 				DCEA56D0224FDEAF0039DAA5 /* Info.plist */,
 				DCEA56C8224FDEAF0039DAA5 /* ourWork.xcdatamodeld */,
-				DCEA56F2224FE5880039DAA5 /* tabWrokListViewContoller.swift */,
-				DCEA56F4224FE5DC0039DAA5 /* tabPeopleViewController.swift */,
 			);
 			path = ourWork;
 			sourceTree = "<group>";
@@ -238,8 +297,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC17E0A42250AD4400704486 /* baseline_people_black_24pt_2x.png in Resources */,
+				DC17E0B22250B89500704486 /* baseline_add_alarm_black_24pt_1x.png in Resources */,
+				DC17E0A62250AD4400704486 /* baseline_people_black_24pt_1x.png in Resources */,
 				DCEA56CF224FDEAF0039DAA5 /* LaunchScreen.storyboard in Resources */,
 				DCEA56CC224FDEAF0039DAA5 /* Assets.xcassets in Resources */,
+				DC17E0B42250B89500704486 /* baseline_add_alarm_black_24pt_3x.png in Resources */,
+				DC17E0AC2250AD5B00704486 /* baseline_list_black_24pt_2x.png in Resources */,
+				DC17E0B32250B89500704486 /* baseline_add_alarm_black_24pt_2x.png in Resources */,
+				DC17E0AA2250AD5B00704486 /* baseline_list_black_24pt_3x.png in Resources */,
+				DC17E0AB2250AD5B00704486 /* baseline_list_black_24pt_1x.png in Resources */,
+				DC17E0A52250AD4400704486 /* baseline_people_black_24pt_3x.png in Resources */,
 				DCEA56C7224FDEAF0039DAA5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,9 +334,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCEA56CA224FDEAF0039DAA5 /* ourWork.xcdatamodeld in Sources */,
+				DC17E0922250970F00704486 /* mainTabbarViewController.swift in Sources */,
 				DCEA56F3224FE5880039DAA5 /* tabWrokListViewContoller.swift in Sources */,
 				DCEA56C2224FDEAF0039DAA5 /* AppDelegate.swift in Sources */,
 				DCEA56F5224FE5DC0039DAA5 /* tabPeopleViewController.swift in Sources */,
+				DC17E0AE2250B4A600704486 /* tabAddWorkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCEA56DA224FDEAF0039DAA5 /* ourWorkTests.swift in Sources */,
+				DC17E0932250970F00704486 /* mainTabbarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCEA56E5224FDEAF0039DAA5 /* ourWorkUITests.swift in Sources */,
+				DC17E0942250970F00704486 /* mainTabbarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +515,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -460,7 +532,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
