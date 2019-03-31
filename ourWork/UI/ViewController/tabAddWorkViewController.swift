@@ -12,25 +12,16 @@ import UIKit
  알림받을 대상자 등록
  */
 class tabAddWorkViewController:UIViewController{
-    /**************** segmentedControl ****************/
-    @IBOutlet weak var segmentedControl: UISegmentedControl!
-    @IBAction func indexChanged(sender: UISegmentedControl) {
-        switch segmentedControl.selectedSegmentIndex
-        {
-        case 0:
-            NSLog("click 0")
-        case 1:
-            NSLog("click 1")
-        default:
-            break;
-        }
-    }
+    /**************** defeine ****************/
     
+    /**************** member ****************/
+
     /**************** system fucntion ****************/
     //----------------------------------------------
     //
     override func viewDidLoad() {
         print("tabAddWorkViewController viewDidLoad")
+        initLayout()
     }
     //----------------------------------------------
     //
@@ -42,5 +33,12 @@ class tabAddWorkViewController:UIViewController{
     override func viewWillDisappear(_ animated: Bool) {
         print("tabAddWorkViewController viewWillDisappear")
     }
+    /**************** user fucntion ****************/
+    //----------------------------------------------
+    //
+    func initLayout(){
+        
+    }
+    
 }
 

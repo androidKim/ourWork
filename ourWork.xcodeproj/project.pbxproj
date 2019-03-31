@@ -17,9 +17,10 @@
 		DC17E0AB2250AD5B00704486 /* baseline_list_black_24pt_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC17E0A82250AD5A00704486 /* baseline_list_black_24pt_1x.png */; };
 		DC17E0AC2250AD5B00704486 /* baseline_list_black_24pt_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC17E0A92250AD5A00704486 /* baseline_list_black_24pt_2x.png */; };
 		DC17E0AE2250B4A600704486 /* tabAddWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17E0AD2250B4A600704486 /* tabAddWorkViewController.swift */; };
-		DC17E0B22250B89500704486 /* baseline_add_alarm_black_24pt_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC17E0AF2250B89500704486 /* baseline_add_alarm_black_24pt_1x.png */; };
-		DC17E0B32250B89500704486 /* baseline_add_alarm_black_24pt_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC17E0B02250B89500704486 /* baseline_add_alarm_black_24pt_2x.png */; };
-		DC17E0B42250B89500704486 /* baseline_add_alarm_black_24pt_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC17E0B12250B89500704486 /* baseline_add_alarm_black_24pt_3x.png */; };
+		DC620E4122510CE40017FFE9 /* addWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC620E4022510CE40017FFE9 /* addWorkViewController.swift */; };
+		DC620E4322510D030017FFE9 /* addPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC620E4222510D030017FFE9 /* addPersonViewController.swift */; };
+		DC620E45225114AB0017FFE9 /* tabSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC620E44225114AB0017FFE9 /* tabSettingViewController.swift */; };
+		DC620E47225115BE0017FFE9 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC620E46225115BE0017FFE9 /* loginViewController.swift */; };
 		DCEA56C2224FDEAF0039DAA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA56C1224FDEAF0039DAA5 /* AppDelegate.swift */; };
 		DCEA56C7224FDEAF0039DAA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEA56C5224FDEAF0039DAA5 /* Main.storyboard */; };
 		DCEA56CA224FDEAF0039DAA5 /* ourWork.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCEA56C8224FDEAF0039DAA5 /* ourWork.xcdatamodeld */; };
@@ -57,9 +58,10 @@
 		DC17E0A82250AD5A00704486 /* baseline_list_black_24pt_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_list_black_24pt_1x.png; sourceTree = "<group>"; };
 		DC17E0A92250AD5A00704486 /* baseline_list_black_24pt_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_list_black_24pt_2x.png; sourceTree = "<group>"; };
 		DC17E0AD2250B4A600704486 /* tabAddWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabAddWorkViewController.swift; sourceTree = "<group>"; };
-		DC17E0AF2250B89500704486 /* baseline_add_alarm_black_24pt_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_add_alarm_black_24pt_1x.png; sourceTree = "<group>"; };
-		DC17E0B02250B89500704486 /* baseline_add_alarm_black_24pt_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_add_alarm_black_24pt_2x.png; sourceTree = "<group>"; };
-		DC17E0B12250B89500704486 /* baseline_add_alarm_black_24pt_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_add_alarm_black_24pt_3x.png; sourceTree = "<group>"; };
+		DC620E4022510CE40017FFE9 /* addWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addWorkViewController.swift; sourceTree = "<group>"; };
+		DC620E4222510D030017FFE9 /* addPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPersonViewController.swift; sourceTree = "<group>"; };
+		DC620E44225114AB0017FFE9 /* tabSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabSettingViewController.swift; sourceTree = "<group>"; };
+		DC620E46225115BE0017FFE9 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		DCEA56BE224FDEAF0039DAA5 /* ourWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ourWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCEA56C1224FDEAF0039DAA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCEA56C6224FDEAF0039DAA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,9 +107,6 @@
 		DC17E0952250A8E200704486 /* res */ = {
 			isa = PBXGroup;
 			children = (
-				DC17E0AF2250B89500704486 /* baseline_add_alarm_black_24pt_1x.png */,
-				DC17E0B02250B89500704486 /* baseline_add_alarm_black_24pt_2x.png */,
-				DC17E0B12250B89500704486 /* baseline_add_alarm_black_24pt_3x.png */,
 				DC17E0A82250AD5A00704486 /* baseline_list_black_24pt_1x.png */,
 				DC17E0A92250AD5A00704486 /* baseline_list_black_24pt_2x.png */,
 				DC17E0A72250AD5A00704486 /* baseline_list_black_24pt_3x.png */,
@@ -125,6 +124,10 @@
 				DCEA56F4224FE5DC0039DAA5 /* tabPeopleViewController.swift */,
 				DC17E0912250970F00704486 /* mainTabbarViewController.swift */,
 				DC17E0AD2250B4A600704486 /* tabAddWorkViewController.swift */,
+				DC620E4022510CE40017FFE9 /* addWorkViewController.swift */,
+				DC620E4222510D030017FFE9 /* addPersonViewController.swift */,
+				DC620E44225114AB0017FFE9 /* tabSettingViewController.swift */,
+				DC620E46225115BE0017FFE9 /* loginViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -298,13 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC17E0A42250AD4400704486 /* baseline_people_black_24pt_2x.png in Resources */,
-				DC17E0B22250B89500704486 /* baseline_add_alarm_black_24pt_1x.png in Resources */,
 				DC17E0A62250AD4400704486 /* baseline_people_black_24pt_1x.png in Resources */,
 				DCEA56CF224FDEAF0039DAA5 /* LaunchScreen.storyboard in Resources */,
 				DCEA56CC224FDEAF0039DAA5 /* Assets.xcassets in Resources */,
-				DC17E0B42250B89500704486 /* baseline_add_alarm_black_24pt_3x.png in Resources */,
 				DC17E0AC2250AD5B00704486 /* baseline_list_black_24pt_2x.png in Resources */,
-				DC17E0B32250B89500704486 /* baseline_add_alarm_black_24pt_2x.png in Resources */,
 				DC17E0AA2250AD5B00704486 /* baseline_list_black_24pt_3x.png in Resources */,
 				DC17E0AB2250AD5B00704486 /* baseline_list_black_24pt_1x.png in Resources */,
 				DC17E0A52250AD4400704486 /* baseline_people_black_24pt_3x.png in Resources */,
@@ -333,12 +333,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC620E4122510CE40017FFE9 /* addWorkViewController.swift in Sources */,
 				DCEA56CA224FDEAF0039DAA5 /* ourWork.xcdatamodeld in Sources */,
+				DC620E45225114AB0017FFE9 /* tabSettingViewController.swift in Sources */,
 				DC17E0922250970F00704486 /* mainTabbarViewController.swift in Sources */,
+				DC620E47225115BE0017FFE9 /* loginViewController.swift in Sources */,
 				DCEA56F3224FE5880039DAA5 /* tabWrokListViewContoller.swift in Sources */,
 				DCEA56C2224FDEAF0039DAA5 /* AppDelegate.swift in Sources */,
 				DCEA56F5224FE5DC0039DAA5 /* tabPeopleViewController.swift in Sources */,
 				DC17E0AE2250B4A600704486 /* tabAddWorkViewController.swift in Sources */,
+				DC620E4322510D030017FFE9 /* addPersonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

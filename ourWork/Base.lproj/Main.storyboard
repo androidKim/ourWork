@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ThQ-tb-XEo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WYz-WR-Xxd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,7 +41,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t6G-bZ-oGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="668" y="546"/>
+            <point key="canvasLocation" x="-89" y="546"/>
+        </scene>
+        <!--설정-->
+        <scene sceneID="uIh-dX-vSc">
+            <objects>
+                <viewController id="yGq-Hj-b3B" customClass="tabSettingViewController" customModule="ourWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eNi-JI-7gO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="tvt-0k-n6m"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="설정" id="mZe-oi-W4t"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jCF-JV-nrT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="551" y="550"/>
         </scene>
         <!--할 일-->
         <scene sceneID="Brn-Vl-NZG">
@@ -74,7 +90,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wus-Xr-KBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="668" y="-878"/>
+            <point key="canvasLocation" x="-1414" y="546"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="32S-41-gF6">
+            <objects>
+                <viewController id="WYz-WR-Xxd" customClass="loginViewController" customModule="ourWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cgf-ur-7Kj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="9WA-i0-DQJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FyY-s7-TFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1415" y="-225"/>
         </scene>
         <!--ourWork-->
         <scene sceneID="Ue1-1C-1hK">
@@ -89,40 +120,28 @@
                         <segue destination="fTc-f3-7pB" kind="relationship" relationship="viewControllers" id="zVt-EL-LJG"/>
                         <segue destination="Hqh-Of-l57" kind="relationship" relationship="viewControllers" id="59G-30-Mro"/>
                         <segue destination="i8J-MQ-d4z" kind="relationship" relationship="viewControllers" id="T2h-4I-zwI"/>
+                        <segue destination="yGq-Hj-b3B" kind="relationship" relationship="viewControllers" id="ZyW-yk-RrG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qAT-dd-maB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-479" y="-225"/>
         </scene>
-        <!--등록-->
+        <!--일 등록-->
         <scene sceneID="AoN-Yt-Ahb">
             <objects>
                 <viewController id="Hqh-Of-l57" customClass="tabAddWorkViewController" customModule="ourWork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TLd-cJ-c5V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="d3K-Wz-NpX">
-                                <rect key="frame" x="0.0" y="40" width="375" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="할 일"/>
-                                    <segment title="구성원"/>
-                                </segments>
-                            </segmentedControl>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="amR-PF-Gsc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="등록" image="baseline_add_alarm_black_24pt_1x.png" id="7jj-VB-nwQ"/>
-                    <connections>
-                        <outlet property="segmentedControl" destination="d3K-Wz-NpX" id="ooA-9V-k36"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="일 등록" image="baseline_add_alarm_black_24pt_1x.png" id="7jj-VB-nwQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpl-N8-RMQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="668" y="-207.34632683658174"/>
+            <point key="canvasLocation" x="-748" y="546"/>
         </scene>
     </scenes>
     <resources>
