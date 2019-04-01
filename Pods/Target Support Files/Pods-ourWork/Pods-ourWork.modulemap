@@ -1,0 +1,6 @@
+framework module Pods_ourWork {
+  umbrella header "Pods-ourWork-umbrella.h"
+
+  export *
+  module * { export * }
+}
