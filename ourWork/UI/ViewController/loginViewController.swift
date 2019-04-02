@@ -14,8 +14,8 @@ class loginViewController:UIViewController, GIDSignInUIDelegate{
     /*********** member ***********/
     
     /*********** coltroller ***********/
-    @IBOutlet weak var signInButton: GIDSignInButton!
-    @IBOutlet weak var containerView: UIView!
+    var btn_GoogleSign: GIDSignInButton!
+    @IBOutlet weak var v_Contaier: UIView!
     //--------------------------------------
     //sign out
     @IBAction func didTapSignOut(_ sender: AnyObject) {
@@ -27,15 +27,20 @@ class loginViewController:UIViewController, GIDSignInUIDelegate{
     //
     override func viewDidLoad() {
         print("loginViewController viewDidLoad")
-        GIDSignIn.sharedInstance().uiDelegate = self
-        GIDSignIn.sharedInstance().signIn()
         
-        self.containerView.addSubview(signInButton)
+        GIDSignIn.sharedInstance().uiDelegate = self
+        self.addViewGoogleLoginBtn()
     }
     //--------------------------------------
     //
     override func viewWillAppear(_ animated: Bool) {
         print("loginViewController viewWillAppear")
+        let appDelegate: AppDelegate? = UIApplication.shared.delegate as? AppDelegate
+        if((appDelegate?.isLogin())!)
+        {
+            appDelegate?.goMain();
+            return
+        }
     }
     //--------------------------------------
     //
@@ -43,22 +48,20 @@ class loginViewController:UIViewController, GIDSignInUIDelegate{
         print("loginViewController viewWillDisappear")
     }
     /*********** google sign function ***********/
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
-        // ...
-        if let error = error {
-            // ...
-            return
-        }
-        
-        guard let authentication = user.authentication else { return }
-        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
-            accessToken: authentication.accessToken)
-        // ...
+    //--------------------------------------
+    //addview google login button
+    func addViewGoogleLoginBtn(){
+        self.btn_GoogleSign = GIDSignInButton()
+        self.btn_GoogleSign.frame = CGRect(x: 0, y: view.frame.height/2, width: view.frame.width, height: 48)
+        self.v_Contaier.addSubview(btn_GoogleSign)   
     }
-    //마지막으로 Firebase 사용자 인증 정보를 사용해 Firebase에 인증합니다
     
-    //google sign out
-    func googleSignout(){
+    /*
+    func googleLoginAction(){
+        //GIDSignIn.sharedInstance().signIn()//로그인시도
+    }
+    
+    func googleLogoutAction(){
         let firebaseAuth = Auth.auth()
         do {
             try firebaseAuth.signOut()
@@ -66,4 +69,5 @@ class loginViewController:UIViewController, GIDSignInUIDelegate{
             print ("Error signing out: %@", signOutError)
         }
     }
+     */
 }
