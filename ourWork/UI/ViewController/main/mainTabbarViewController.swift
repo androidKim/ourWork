@@ -13,13 +13,15 @@
  */
 import Foundation
 import UIKit
+import FirebaseDatabase
+import SwiftyJSON
 
 class mainTabbarViewController:UITabBarController, UITabBarControllerDelegate{
     /*********** member ***********/
     var tabWorkList:tabWorkListViewController!
     var tabAddWork:tabAddWorkViewController!
     var tabPeople:tabPeopleViewController!
-    
+    var ref: DatabaseReference!//firebase database
     /*********** system function ***********/
     //--------------------------------------
     //
@@ -30,6 +32,7 @@ class mainTabbarViewController:UITabBarController, UITabBarControllerDelegate{
         self.tabAddWork = tabAddWorkViewController()
         self.delegate = self
         
+        self.ref = Database.database().reference()//get database reference..
         self.setUserDataProc()
     }
     //--------------------------------------
@@ -48,25 +51,24 @@ class mainTabbarViewController:UITabBarController, UITabBarControllerDelegate{
     func setUserDataProc(){
         //login하면서 저장한 앱내 유저정보..
         let defaults = UserDefaults.standard
-        if let type = defaults.string(forKey: "type") {
-            print(type) // Some String Value
-        }
-        
-        if let sns_key = defaults.string(forKey: "sns_key") {
-            print(sns_key) // Some String Value
-        }
-        
-        if let user_key = defaults.string(forKey: "user_key") {
-            print(user_key) // Some String Value
-        }
-        
-        if let name = defaults.string(forKey: "name") {
-            print(name) // Some String Value
-        }
-        
+        var user_key:String = ""
+        var sns_key:String = ""
+        var type:String = ""
+        var img:String = ""
+        var name:String = ""
+        var gender:String = ""
+        type = defaults.string(forKey: "type")!
+        sns_key = defaults.string(forKey: "sns_key")!
+        user_key = defaults.string(forKey: "user_key")!
+        name = defaults.string(forKey: "name")!
         
         //firebase database에 저장..!
+        //var pUser:user = user(user_key:user_key, sns_key:sns_key , type:type, img:"", name:name, gender: "")
         
-        
+        /*
+        let swiftyJsonVar:JSON = "["user_key":'aa']"
+        var pInfo:user = user.build(json: swiftyJsonVar)!
+        self.ref.child("tb_user").setValue(swiftyJsonVar)
+         */
     }
 }
