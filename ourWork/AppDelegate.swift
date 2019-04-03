@@ -100,7 +100,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     //
     func isLogin() -> Bool {
         let defaults = UserDefaults.standard
-        if let user_key = defaults.string(forKey: "user_key")//저장된 user_key가있으면 로그인된상태..
+        if let user_key = defaults.string(forKey: "user_key")//저장된 sns_key가있으면 로그인된상태..
         {
             return true
         }
@@ -142,7 +142,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             let defaults = UserDefaults.standard
             defaults.set("G", forKey: "type")
             defaults.set(userId, forKey: "sns_key")
-            defaults.set("G" + userId, forKey: "user_key")
             defaults.set(fullName, forKey: "name")
         }
         

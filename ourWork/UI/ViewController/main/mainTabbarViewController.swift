@@ -13,6 +13,7 @@
  */
 import Foundation
 import UIKit
+import Firebase
 import FirebaseDatabase
 import SwiftyJSON
 
@@ -33,7 +34,16 @@ class mainTabbarViewController:UITabBarController, UITabBarControllerDelegate{
         self.delegate = self
         
         self.ref = Database.database().reference()//get database reference..
-        self.setUserDataProc()
+        
+        let defaults = UserDefaults.standard
+        if let user_key = defaults.string(forKey: "user_key"){
+            //firebasedb에 저장한 userkey가 없으면..!
+            if(user_key.elementsEqual("")){
+                self.setUserDataProc()
+            }
+        }else {
+            self.setUserDataProc()//최초저장
+        }
     }
     //--------------------------------------
     //
@@ -59,16 +69,29 @@ class mainTabbarViewController:UITabBarController, UITabBarControllerDelegate{
         var gender:String = ""
         type = defaults.string(forKey: "type")!
         sns_key = defaults.string(forKey: "sns_key")!
-        user_key = defaults.string(forKey: "user_key")!
         name = defaults.string(forKey: "name")!
         
         //firebase database에 저장..!
-        //var pUser:user = user(user_key:user_key, sns_key:sns_key , type:type, img:"", name:name, gender: "")
-        
-        /*
-        let swiftyJsonVar:JSON = "["user_key":'aa']"
+        var swiftyJsonVar:JSON = ["type": type, "sns_key": sns_key, "user_key": user_key, "name":name]
+        //let swiftyJsonVar = JSON(jsonObj)
         var pInfo:user = user.build(json: swiftyJsonVar)!
-        self.ref.child("tb_user").setValue(swiftyJsonVar)
-         */
+     
+        //convert the JSON to a raw String
+        if let strJson = swiftyJsonVar.rawString() {
+            // 'strJson' contains string version of 'jsonObject'
+        
+        }
+        
+        user_key = ref.child("tb_user").childByAutoId().key as! String//고유키
+        ref = ref.child("tb_user").child(user_key)
+        let data:[String:Any] = [
+            "type":type,
+            "user_key": user_key,
+            "sns_type": sns_key,
+            "name":name,
+            "reg_date":ServerValue.timestamp()
+        ]
+        ref.setValue(data)//Set Firebase DB Row
+        defaults.set(user_key, forKey: "user_key")//save userDefaults userkey
     }
 }
