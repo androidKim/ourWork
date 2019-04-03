@@ -3,11 +3,11 @@ This application makes use of the following third party libraries:
 
 ## Firebase
 
-Copyright 2018 Google
+Copyright 2019 Google
 
 ## FirebaseAnalytics
 
-Copyright 2018 Google
+Copyright 2019 Google
 
 ## FirebaseAuth
 
@@ -835,10 +835,6 @@ Copyright 2018 Google
 
 ## FirebaseInstanceID
 
-Copyright 2018 Google
-
-## GTMOAuth2
-
 
                                  Apache License
                            Version 2.0, January 2004
@@ -1251,7 +1247,7 @@ Copyright 2018 Google
 
 ## GoogleAppMeasurement
 
-Copyright 2018 Google
+Copyright 2019 Google
 
 ## GoogleSignIn
 
