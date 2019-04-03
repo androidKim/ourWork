@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         //firebase
         FirebaseApp.configure()
         
@@ -81,7 +82,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }()
 
     // MARK: - Core Data Saving support
-
     func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {
@@ -95,34 +95,81 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             }
         }
     }
+    /********************* global user function *********************/
+    //----------------------------------------------
+    //
+    func isLogin() -> Bool {
+        let defaults = UserDefaults.standard
+        if let user_key = defaults.string(forKey: "user_key")//저장된 sns_key가있으면 로그인된상태..
+        {
+            return true
+        }
+        else
+        {
+            return false
+        }
+    }
+    //----------------------------------------------
+    //메인으로 이동..
+    func goMain(){
+        // 메인탭바 컨트롤러로 이동
+        let mainStoryboardIpad : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewControlleripad : UITabBarController = mainStoryboardIpad.instantiateViewController(withIdentifier: "mainTabbarViewController") as! UITabBarController
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = initialViewControlleripad
+        self.window?.makeKeyAndVisible()
+    }
     
-    /********************* google sign *********************/    
+    /********************* google sign *********************/
+    /*메소드에서 GIDAuthentication 객체로부터 Google ID 토큰과 Google 액세스 토큰을 가져와서 Firebase 사용자 인증 정보로 교환합니다.*/
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
         // ...
-        if let error = error {
+        if let error = error
+        {
             print("\(error.localizedDescription)")
-        } else {
+        }
+        else//구글 로그인 성공
+        {
             // Perform any operations on signed in user here.
-            let userId = user.userID                  // For client-side use only!
-            let idToken = user.authentication.idToken // Safe to send to the server
-            let fullName = user.profile.name
-            let givenName = user.profile.givenName
-            let familyName = user.profile.familyName
-            let email = user.profile.email
-            // ...
+            let userId:String = user.userID                  // For client-side use only!
+            let idToken:String = user.authentication.idToken // Safe to send to the server
+            let fullName:String = user.profile.name
+            let givenName:String = user.profile.givenName
+            let familyName:String = user.profile.familyName
+            let email:String = user.profile.email
+        
+            //save user defaults
+            let defaults = UserDefaults.standard
+            defaults.set("G", forKey: "type")
+            defaults.set(userId, forKey: "sns_key")
+            defaults.set(fullName, forKey: "name")
         }
         
+        //
         guard let authentication = user.authentication else { return }
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                        accessToken: authentication.accessToken)
         // ...
+        
+        //마지막으로 Firebase 사용자 인증 정보를 사용해 Firebase에 인증합니다
+        Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
+            if let error = error {
+                // ...
+                return
+            }
+            
+            
+            self.goMain()
+        }
     }
-    
+    //-------------------------------------------------------------------
+    //
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
         // Perform any operations when the user disconnects from app here.
         // ...
     }
-
+    //-------------------------------------------------------------------
+    //
     //open url
     @available(iOS 9.0, *)
     func application(_ application: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any])
