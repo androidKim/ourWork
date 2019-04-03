@@ -14,7 +14,7 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright 2019 Google</string>
+			<string>Copyright 2018 Google</string>
 			<key>License</key>
 			<string>Copyright</string>
 			<key>Title</key>
@@ -24,7 +24,7 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright 2019 Google</string>
+			<string>Copyright 2018 Google</string>
 			<key>License</key>
 			<string>Copyright</string>
 			<key>Title</key>
@@ -670,6 +670,16 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>Copyright 2018 Google</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>FirebaseInstanceID</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>
                                  Apache License
                            Version 2.0, January 2004
@@ -876,7 +886,7 @@
 			<key>License</key>
 			<string>Apache</string>
 			<key>Title</key>
-			<string>FirebaseInstanceID</string>
+			<string>GTMOAuth2</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
@@ -1094,7 +1104,7 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright 2019 Google</string>
+			<string>Copyright 2018 Google</string>
 			<key>License</key>
 			<string>Copyright</string>
 			<key>Title</key>
