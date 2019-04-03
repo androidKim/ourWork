@@ -10,6 +10,10 @@ target 'ourWork' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
+  pod 'Firebase/Database'
+
+  #jsonparser
+  pod 'SwiftyJSON', '~> 4.0'
   
   target 'ourWorkTests' do
     inherit! :search_paths
