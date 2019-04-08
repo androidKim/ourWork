@@ -45,6 +45,14 @@
 		DCEA56E5224FDEAF0039DAA5 /* ourWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA56E4224FDEAF0039DAA5 /* ourWorkUITests.swift */; };
 		DCEA56F3224FE5880039DAA5 /* tabWrokListViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA56F2224FE5880039DAA5 /* tabWrokListViewContoller.swift */; };
 		DCEA56F5224FE5DC0039DAA5 /* tabPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA56F4224FE5DC0039DAA5 /* tabPeopleViewController.swift */; };
+		DCFDBFAD2254FDFF009BF7CD /* baseline_playlist_add_black_24pt_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFDBFAA2254FDFD009BF7CD /* baseline_playlist_add_black_24pt_1x.png */; };
+		DCFDBFAE2254FDFF009BF7CD /* baseline_playlist_add_black_24pt_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFDBFAB2254FDFE009BF7CD /* baseline_playlist_add_black_24pt_2x.png */; };
+		DCFDBFAF2254FDFF009BF7CD /* baseline_playlist_add_black_24pt_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFDBFAC2254FDFF009BF7CD /* baseline_playlist_add_black_24pt_3x.png */; };
+		DCFDBFB32254FEB0009BF7CD /* baseline_settings_black_24pt_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFDBFB02254FEAF009BF7CD /* baseline_settings_black_24pt_2x.png */; };
+		DCFDBFB42254FEB0009BF7CD /* baseline_settings_black_24pt_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFDBFB12254FEB0009BF7CD /* baseline_settings_black_24pt_1x.png */; };
+		DCFDBFB52254FEB0009BF7CD /* baseline_settings_black_24pt_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFDBFB22254FEB0009BF7CD /* baseline_settings_black_24pt_3x.png */; };
+		DCFDBFB7225505E3009BF7CD /* work.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDBFB6225505E3009BF7CD /* work.swift */; };
+		DCFDBFBA22550656009BF7CD /* table.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDBFB922550656009BF7CD /* table.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +117,14 @@
 		DCEA56E6224FDEAF0039DAA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCEA56F2224FE5880039DAA5 /* tabWrokListViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabWrokListViewContoller.swift; sourceTree = "<group>"; };
 		DCEA56F4224FE5DC0039DAA5 /* tabPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabPeopleViewController.swift; sourceTree = "<group>"; };
+		DCFDBFAA2254FDFD009BF7CD /* baseline_playlist_add_black_24pt_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_playlist_add_black_24pt_1x.png; sourceTree = "<group>"; };
+		DCFDBFAB2254FDFE009BF7CD /* baseline_playlist_add_black_24pt_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_playlist_add_black_24pt_2x.png; sourceTree = "<group>"; };
+		DCFDBFAC2254FDFF009BF7CD /* baseline_playlist_add_black_24pt_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_playlist_add_black_24pt_3x.png; sourceTree = "<group>"; };
+		DCFDBFB02254FEAF009BF7CD /* baseline_settings_black_24pt_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_settings_black_24pt_2x.png; sourceTree = "<group>"; };
+		DCFDBFB12254FEB0009BF7CD /* baseline_settings_black_24pt_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_settings_black_24pt_1x.png; sourceTree = "<group>"; };
+		DCFDBFB22254FEB0009BF7CD /* baseline_settings_black_24pt_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_settings_black_24pt_3x.png; sourceTree = "<group>"; };
+		DCFDBFB6225505E3009BF7CD /* work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = work.swift; sourceTree = "<group>"; };
+		DCFDBFB922550656009BF7CD /* table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = table.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +181,12 @@
 		DC17E0952250A8E200704486 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				DCFDBFB12254FEB0009BF7CD /* baseline_settings_black_24pt_1x.png */,
+				DCFDBFB02254FEAF009BF7CD /* baseline_settings_black_24pt_2x.png */,
+				DCFDBFB22254FEB0009BF7CD /* baseline_settings_black_24pt_3x.png */,
+				DCFDBFAA2254FDFD009BF7CD /* baseline_playlist_add_black_24pt_1x.png */,
+				DCFDBFAB2254FDFE009BF7CD /* baseline_playlist_add_black_24pt_2x.png */,
+				DCFDBFAC2254FDFF009BF7CD /* baseline_playlist_add_black_24pt_3x.png */,
 				DC17E0A82250AD5A00704486 /* baseline_list_black_24pt_1x.png */,
 				DC17E0A92250AD5A00704486 /* baseline_list_black_24pt_2x.png */,
 				DC17E0A72250AD5A00704486 /* baseline_list_black_24pt_3x.png */,
@@ -210,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				DC181EB222522BCF008A2F49 /* user.swift */,
+				DCFDBFB6225505E3009BF7CD /* work.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,6 +240,7 @@
 		DC181EB122522BA8008A2F49 /* Structure */ = {
 			isa = PBXGroup;
 			children = (
+				DCFDBFB822550615009BF7CD /* Database */,
 				DC181EB022522B90008A2F49 /* Model */,
 			);
 			path = Structure;
@@ -278,6 +302,14 @@
 				DCEA56E6224FDEAF0039DAA5 /* Info.plist */,
 			);
 			path = ourWorkUITests;
+			sourceTree = "<group>";
+		};
+		DCFDBFB822550615009BF7CD /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				DCFDBFB922550656009BF7CD /* table.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,11 +426,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCFDBFB32254FEB0009BF7CD /* baseline_settings_black_24pt_2x.png in Resources */,
 				DC17E0A42250AD4400704486 /* baseline_people_black_24pt_2x.png in Resources */,
 				DC17E0A62250AD4400704486 /* baseline_people_black_24pt_1x.png in Resources */,
 				DCEA56CF224FDEAF0039DAA5 /* LaunchScreen.storyboard in Resources */,
+				DCFDBFAD2254FDFF009BF7CD /* baseline_playlist_add_black_24pt_1x.png in Resources */,
 				DCEA56CC224FDEAF0039DAA5 /* Assets.xcassets in Resources */,
+				DCFDBFB42254FEB0009BF7CD /* baseline_settings_black_24pt_1x.png in Resources */,
+				DCFDBFB52254FEB0009BF7CD /* baseline_settings_black_24pt_3x.png in Resources */,
+				DCFDBFAF2254FDFF009BF7CD /* baseline_playlist_add_black_24pt_3x.png in Resources */,
 				DC17E0AC2250AD5B00704486 /* baseline_list_black_24pt_2x.png in Resources */,
+				DCFDBFAE2254FDFF009BF7CD /* baseline_playlist_add_black_24pt_2x.png in Resources */,
 				DC181EA322522ABD008A2F49 /* Localizable.strings in Resources */,
 				DC17E0AA2250AD5B00704486 /* baseline_list_black_24pt_3x.png in Resources */,
 				DC17E0AB2250AD5B00704486 /* baseline_list_black_24pt_1x.png in Resources */,
@@ -431,15 +469,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ourWork/Pods-ourWork-resources.sh",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
@@ -453,15 +487,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ourWorkTests-checkManifestLockResult.txt",
 			);
@@ -475,15 +505,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ourWorkUITests-checkManifestLockResult.txt",
 			);
@@ -497,15 +523,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ourWork-checkManifestLockResult.txt",
 			);
@@ -519,10 +541,9 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ourWork/Pods-ourWork-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
@@ -531,9 +552,8 @@
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
@@ -560,7 +580,9 @@
 				DC620E47225115BE0017FFE9 /* loginViewController.swift in Sources */,
 				DCEA56F3224FE5880039DAA5 /* tabWrokListViewContoller.swift in Sources */,
 				DCEA56C2224FDEAF0039DAA5 /* AppDelegate.swift in Sources */,
+				DCFDBFBA22550656009BF7CD /* table.swift in Sources */,
 				DCEA56F5224FE5DC0039DAA5 /* tabPeopleViewController.swift in Sources */,
+				DCFDBFB7225505E3009BF7CD /* work.swift in Sources */,
 				DC17E0AE2250B4A600704486 /* tabAddWorkViewController.swift in Sources */,
 				DC181EB322522BCF008A2F49 /* user.swift in Sources */,
 				DC620E4322510D030017FFE9 /* addPersonViewController.swift in Sources */,

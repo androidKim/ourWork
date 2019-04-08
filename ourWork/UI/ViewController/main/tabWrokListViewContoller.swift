@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 class tabWorkListViewController:UIViewController{
+    @IBOutlet weak var workTableView: UITableView!
     /******************* system function *******************/
     //-----------------------------------------------
     //
