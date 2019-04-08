@@ -1,6 +1,6 @@
 
 /* Class = "UITabBarItem"; title = "일 등록"; ObjectID = "7jj-VB-nwQ"; */
-"7jj-VB-nwQ.title" = "일 등록";
+"7jj-VB-nwQ.title" = "집안일 등록";
 
 /* Class = "UINavigationItem"; title = "회원가입"; ObjectID = "I0K-eE-dS3"; */
 "I0K-eE-dS3.title" = "회원가입";
@@ -12,7 +12,7 @@
 "UqJ-v2-jpq.title" = "구성원";
 
 /* Class = "UITabBarItem"; title = "할 일"; ObjectID = "bRR-Jt-N4p"; */
-"bRR-Jt-N4p.title" = "할 일";
+"bRR-Jt-N4p.title" = "집안일";
 
 /* Class = "UITabBarItem"; title = "설정"; ObjectID = "mZe-oi-W4t"; */
 "mZe-oi-W4t.title" = "설정";
