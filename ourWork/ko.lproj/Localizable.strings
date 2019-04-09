@@ -4,4 +4,11 @@
 
   Created by taejun on 01/04/2019.
   Copyright © 2019 midasgo. All rights reserved.
+
 */
+"ok"="확인";
+"cancel"="취소";
+"msg_input_work_title" = "집안일 이름을 입력하세요";
+"msg_input_work_title_sub" = "자유롭게 입력하세요(ex 청소)";
+"msg_input_work_desc" = "집안일 내용을 입력하세요";
+"msg_input_work_desc_sub" = "자유롭게 입력하세요(ex 거실을 쓸고 닦는다)";

@@ -82,6 +82,7 @@
 		8482B4C7EAD91AAADE13BC6D /* Pods-ourWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ourWork.debug.xcconfig"; path = "Target Support Files/Pods-ourWork/Pods-ourWork.debug.xcconfig"; sourceTree = "<group>"; };
 		85BE060802AC32CBA5C0540A /* Pods_ourWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ourWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D93DBCB735DE993B8D65CEC /* Pods-ourWorkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ourWorkUITests.debug.xcconfig"; path = "Target Support Files/Pods-ourWorkUITests/Pods-ourWorkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC07CBBB225CBE0E0022DE8E /* ourWork.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ourWork.entitlements; sourceTree = "<group>"; };
 		DC17E0912250970F00704486 /* mainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTabbarViewController.swift; sourceTree = "<group>"; };
 		DC17E0A12250AD4400704486 /* baseline_people_black_24pt_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_people_black_24pt_2x.png; sourceTree = "<group>"; };
 		DC17E0A22250AD4400704486 /* baseline_people_black_24pt_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_people_black_24pt_3x.png; sourceTree = "<group>"; };
@@ -271,6 +272,7 @@
 		DCEA56C0224FDEAF0039DAA5 /* ourWork */ = {
 			isa = PBXGroup;
 			children = (
+				DC07CBBB225CBE0E0022DE8E /* ourWork.entitlements */,
 				DC293ED32253776A00AFD506 /* GoogleService-Info.plist */,
 				DC17E0952250A8E200704486 /* res */,
 				DC181EA522522ABD008A2F49 /* Localizable.strings */,
@@ -386,6 +388,11 @@
 					DCEA56BD224FDEAF0039DAA5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					DCEA56D4224FDEAF0039DAA5 = {
 						CreatedOnToolsVersion = 9.2;
@@ -777,6 +784,7 @@
 			baseConfigurationReference = 8482B4C7EAD91AAADE13BC6D /* Pods-ourWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ourWork/ourWork.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -797,6 +805,7 @@
 			baseConfigurationReference = 2F9D4676237E96B351843F6E /* Pods-ourWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ourWork/ourWork.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;

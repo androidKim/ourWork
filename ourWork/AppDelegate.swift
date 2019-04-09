@@ -178,6 +178,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                                                      sourceApplication:options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
                                                      annotation: [:])
     }
-
+    
+    
+    //----------------------------------------------
+    //alert
+    func showAlert(title:String, msg:String, ok:String, cancel:String){
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
+        
+        if(!ok.elementsEqual(""))//ok
+        {
+            let okAction = UIAlertAction(title: ok, style: UIAlertActionStyle.default,handler : nil )
+            alert.addAction(okAction)
+        }
+        
+        if(!cancel.elementsEqual(""))//cancel..
+        {
+            let cancel = UIAlertAction(title: cancel, style: UIAlertActionStyle.cancel,handler : nil)
+            alert.addAction(cancel)
+        }
+        self.window?.rootViewController?.present(alert, animated: true, completion: nil)
+    }
+    //----------------------------------------------
+    //요일구하기
+    func getDayOfWeek(date:Date) -> String {
+        return "test"
+    }
 }
 

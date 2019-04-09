@@ -5,3 +5,9 @@
   Created by taejun on 01/04/2019.
   Copyright © 2019 midasgo. All rights reserved.
 */
+"ok"="ok";
+"cancel"="cancel";
+"msg_input_work_title" = "Please enter your household name";
+"msg_input_work_title_sub" = "Please enter it freely (ex cleaning)";
+"msg_input_work_desc" = "Please enter your household chores";
+"msg_input_work_desc_sub" = "Please input it freely (ex Sweep the living room and wipe it)";
