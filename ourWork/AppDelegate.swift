@@ -11,6 +11,9 @@ import Firebase
 import CoreData
 import GoogleSignIn
 
+/*
+ AppDelegate (글로벌 변수, 함수, 앱링크유입, 앱런치에서 종료 이벤트감지..)
+ */
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     var window: UIWindow?
@@ -24,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         // Initialize google sign-in
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
-        
+    
         return true
     }
 
@@ -119,6 +122,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         self.window?.rootViewController = initialViewControlleripad
         self.window?.makeKeyAndVisible()
     }
+    //----------------------------------------------
+    //탭바 인덱스 변경
+    func tabBarChange(index:Int){
+        //...
+        let mainStoryboardIpad : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewControlleripad : UITabBarController = mainStoryboardIpad.instantiateViewController(withIdentifier: "mainTabbarViewController") as! UITabBarController
+        initialViewControlleripad.selectedIndex = index
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = initialViewControlleripad
+        self.window?.makeKeyAndVisible()
+    }
     
     /********************* google sign *********************/
     /*메소드에서 GIDAuthentication 객체로부터 Google ID 토큰과 Google 액세스 토큰을 가져와서 Firebase 사용자 인증 정보로 교환합니다.*/
@@ -179,9 +193,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                                                      annotation: [:])
     }
     
-    
     //----------------------------------------------
-    //alert
+    //alert(ok또는 cancel 이벤트없는 alert 공통사용 title, msg, ok, cancel 텍스트 전달)
     func showAlert(title:String, msg:String, ok:String, cancel:String){
         let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
         
@@ -200,8 +213,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }
     //----------------------------------------------
     //요일구하기
-    func getDayOfWeek(date:Date) -> String {
-        return "test"
+    func getDayOfWeek(yyyyMMdd:Date) -> String {
+        let strWeekDay:String!
+        let myCalendar = Calendar(identifier: .gregorian)
+        let weekDay = myCalendar.component(.weekday, from: yyyyMMdd)
+        switch (weekDay) {
+        case 1:
+            strWeekDay = "SUN"
+        case 2:
+            strWeekDay = "MON"
+        case 3:
+            strWeekDay = "TUE"
+        case 4:
+            strWeekDay = "WED"
+        case 5:
+            strWeekDay = "THU"
+        case 6:
+            strWeekDay = "FRI"
+        case 7:
+            strWeekDay = "SAT"
+        default:
+            strWeekDay = "nil"
+        }
+        return strWeekDay
     }
 }
 

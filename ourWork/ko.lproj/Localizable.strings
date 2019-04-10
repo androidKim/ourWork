@@ -8,7 +8,17 @@
 */
 "ok"="확인";
 "cancel"="취소";
+"yes"="네";
+"no"="아니오";
+"complete"="성공";
+"fail"="실패";
+"noti"="알림";
 "msg_input_work_title" = "집안일 이름을 입력하세요";
 "msg_input_work_title_sub" = "자유롭게 입력하세요(ex 청소)";
 "msg_input_work_desc" = "집안일 내용을 입력하세요";
 "msg_input_work_desc_sub" = "자유롭게 입력하세요(ex 거실을 쓸고 닦는다)";
+"msg_add_work_complete" = "집안일 등록이 완료 되었어요!\n새로운 집안일을 등록해보세요";
+"msg_add_work_fail" = "집안일 등록에 실패했습니다.";
+"add" = "등록";
+"msg_add_question" = "등록하시겠습니까?";
+"msg_plz_add_family" = "가족이 없습니다. 가족을 설정하세요.";

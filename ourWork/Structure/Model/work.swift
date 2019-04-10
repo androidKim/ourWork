@@ -21,7 +21,7 @@ class work:NSObject{
     var repeat_day:String = "";//매일반복 (매일 푸시알림)
     var reg_date:String = "";//timestamp
     
-    init(work_key: String?, title:String?, desc:String?, work_date:String?, day_week:String?,work_time:String?, repeat_year:String?,repeat_month:String?, repeat_week:String?, repeat_day:String?, reg_date:String?){
+    init(work_key: String?, title:String?, desc:String?, work_date:String?, day_week:String?, repeat_year:String?,repeat_month:String?, repeat_week:String?, repeat_day:String?, reg_date:String?){
         self.work_key = work_key!
         self.title = title!
         self.desc = desc!
@@ -36,7 +36,7 @@ class work:NSObject{
     
     class func build(json:JSON) -> work?
     {
-        let pInfo:work = work(work_key: "", title:"", desc:"",work_date:"", day_week:"",work_time:"",
+        let pInfo:work = work(work_key: "", title:"", desc:"",work_date:"", day_week:"",
                               repeat_year:"", repeat_month:"",repeat_week:"",repeat_day:"",reg_date:"");
         pInfo.work_key = json["work_key"].stringValue
         pInfo.title = json["title"].stringValue

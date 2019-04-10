@@ -16,8 +16,17 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 import SwiftyJSON
-
+/*
+ 메인 탭바컨트롤러
+ */
 class mainTabbarViewController:UITabBarController, UITabBarControllerDelegate{
+    //tab index enum
+    enum tabIndex:Int {
+        case tab_0 = 0//집안일 리스트 탭
+        case tab_1 = 1//집안일 등록 탭
+        case tab_2 = 2//가족 탭
+        case tab_3 = 3//설정 탭
+    }
     /*********** member ***********/
     var tabWorkList:tabWorkListViewController!
     var tabAddWork:tabAddWorkViewController!
@@ -81,17 +90,45 @@ class mainTabbarViewController:UITabBarController, UITabBarControllerDelegate{
             // 'strJson' contains string version of 'jsonObject'
         
         }
-        
-        user_key = ref.child("tb_user").childByAutoId().key as! String//고유키
-        ref = ref.child("tb_user").child(user_key)
-        let data:[String:Any] = [
-            "type":type,
-            "user_key": user_key,
-            "sns_type": sns_key,
-            "name":name,
-            "reg_date":ServerValue.timestamp()
-        ]
-        ref.setValue(data)//Set Firebase DB Row
-        defaults.set(user_key, forKey: "user_key")//save userDefaults userkey
+        //유저테이블조회
+        self.ref.child("tb_user").queryOrdered(byChild: "sns_key").queryEqual(toValue: sns_key)
+        .observeSingleEvent(of: .value, with: { (snapshot) in
+            //sns_key같은 값이 있으면..update
+            if(snapshot.exists())
+            {
+                let value = snapshot.value as? NSDictionary
+                let keys = value?.allKeys as! [String]
+                let myKey:String = keys[0]//나의 유저키 획득
+                let myInfoDic = value?[myKey] as? NSDictionary//유저키를 활용해 상세 정보 획득
+                user_key = myInfoDic?["user_key"] as! String
+                self.ref = self.ref.child("tb_user").child(user_key)
+                let data:[String:Any] = [
+                    "type":type,
+                    "user_key": user_key,
+                    "sns_key": sns_key,
+                    "name":name,
+                    "reg_date":ServerValue.timestamp()
+                ]
+                self.ref.setValue(data)//Set Firebase DB Row
+                defaults.set(user_key, forKey: "user_key")//save userDefaults userkey
+            }
+            else//없으면 신규생성!
+            {
+                user_key = self.ref.child("tb_user").childByAutoId().key as! String//고유키
+                self.ref = self.ref.child("tb_user").child(user_key)
+                let data:[String:Any] = [
+                    "type":type,
+                    "user_key": user_key,
+                    "sns_key": sns_key,
+                    "name":name,
+                    "reg_date":ServerValue.timestamp()
+                ]
+                self.ref.setValue(data)//Set Firebase DB Row
+                defaults.set(user_key, forKey: "user_key")//save userDefaults userkey
+            }
+            // ...
+        }) { (error) in
+            print(error.localizedDescription)
+        }
     }
 }

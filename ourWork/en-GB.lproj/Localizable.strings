@@ -7,7 +7,17 @@
 */
 "ok"="ok";
 "cancel"="cancel";
+"yes"="yes";
+"no"="no";
+"complete"="complete";
+"fail"="fail";
+"noti"="notification";
 "msg_input_work_title" = "Please enter your household name";
 "msg_input_work_title_sub" = "Please enter it freely (ex cleaning)";
 "msg_input_work_desc" = "Please enter your household chores";
 "msg_input_work_desc_sub" = "Please input it freely (ex Sweep the living room and wipe it)";
+"msg_add_work_complete" = "Chores registration is complete!\n Please register new chores";
+"msg_add_work_fail" = "Chores registration failed.";
+"add" = "Add";
+"msg_add_question" = "Would you like to register?";
+"msg_plz_add_family" = "have no family. Set up your family.";
