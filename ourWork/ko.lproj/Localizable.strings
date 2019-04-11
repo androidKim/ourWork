@@ -22,3 +22,12 @@
 "add" = "등록";
 "msg_add_question" = "등록하시겠습니까?";
 "msg_plz_add_family" = "가족이 없습니다. 가족을 설정하세요.";
+"api_fail" = "통신 실패";
+"msg_api_error" = "서버통신에 실패하였습니다. 잠시후 다시 시도해주세요.";
+"add_user_key_desc" = "상대방 고유키값을 등록하면 가족이 설정이 완료됩니다.\n키값은 설정 탭에서 확인 가능합니다.";
+"msg_not_input_key" = "상대방 키값이 입력되지 않았어요.";
+"msg_its_my_key" = "나를 가족으로 등록할 수는 없어요.";
+"msg_not_exist_user" = "존재하지않는 사용자 입니다.";
+"msg_this_user_exist_family" = "해당 유저는 이미 설정된 가족이 있습니다.(1인 1가족만 가능합니다)";
+
+

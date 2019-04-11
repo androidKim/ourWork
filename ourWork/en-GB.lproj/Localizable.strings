@@ -21,3 +21,10 @@
 "add" = "Add";
 "msg_add_question" = "Would you like to register?";
 "msg_plz_add_family" = "have no family. Set up your family.";
+"api_fail" = "Communication failure";
+"msg_api_error" = "Server communication failed. Please try again in a few minutes.";
+"add_user_key_desc" = "If you register the other party's unique key value, family setup is completed.\nYou can check the key value in the setting tab.";
+"msg_not_input_key" = "The other party key value is not entered.";
+"msg_its_my_key" = "I can not register me as a family.";
+"msg_not_exist_user" = "This user does not exist.";
+"msg_this_user_exist_family" = "The user has already set up a family (only one family member is allowed)";

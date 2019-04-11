@@ -14,34 +14,7 @@ import SwiftyJSON
  */
 
 
-/**************** extention function ****************/
-//----------------------------------------------
-//키보드 툴바
-extension UIViewController: UITextFieldDelegate{
-    func addToolBar(textField: UITextField){
-        let toolBar = UIToolbar()
-        toolBar.barStyle = UIBarStyle.default
-        toolBar.isTranslucent = true
-        toolBar.tintColor = UIColor(red: 76/255, green: 217/255, blue: 100/255, alpha: 1)
-        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: self, action:#selector(donePressed))
-        let cancelButton = UIBarButtonItem(title: "Cancel", style: UIBarButtonItemStyle.plain, target: self, action:#selector(cancelPressed))
-        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
-        toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
-        toolBar.isUserInteractionEnabled = true
-        toolBar.sizeToFit()
-        
-        textField.delegate = self
-        textField.inputAccessoryView = toolBar
-    }
-    @objc func donePressed(){
-        view.endEditing(true)
-    }
-    @objc func cancelPressed(){
-        view.endEditing(true)
-    }
-    
-    
-}
+
 
 class tabAddWorkViewController:UIViewController{
     
@@ -134,7 +107,7 @@ class tabAddWorkViewController:UIViewController{
                             let family_key = value?["family_key"] as! String
                             if(!family_key.elementsEqual(""))
                             {
-                                self.notExistFamily()
+                                self.existFamily()
                             }
                             else
                             {
@@ -153,14 +126,11 @@ class tabAddWorkViewController:UIViewController{
                 }) { (error) in
                     print(error.localizedDescription)
                     //
-                    /*
-                 
-                    var title:String = NSLocalizedString("fail", comment: "")
-                    var msg:String = NSLocalizedString("msg_add_work_fail", comment: "")
+                    var title:String = NSLocalizedString("api_fail", comment: "")
+                    var msg:String = NSLocalizedString("msg_api_error", comment: "")
                     var ok:String = NSLocalizedString("ok", comment: "")
                     var cancel:String = ""
                     self.mAppDelegate.showAlert(title: title, msg: msg, ok: ok, cancel: cancel)
-                    */
                 }
             }
         }
@@ -169,6 +139,14 @@ class tabAddWorkViewController:UIViewController{
             self.notExistFamily()
         }
     }
+    //----------------------------------------------
+    //설정된 가족이있을때
+    func existFamily(){
+        self.m_bFamilyStatus = true
+        
+        //..가족설정후 코딩
+    }
+    
     //----------------------------------------------
     //설정된 가족이 없을때
     func notExistFamily(){
@@ -188,7 +166,6 @@ class tabAddWorkViewController:UIViewController{
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)//Show Alert!
     }
-    
     //----------------------------------------------
     //
     func checkValidation() -> Bool {
@@ -223,7 +200,7 @@ class tabAddWorkViewController:UIViewController{
     
     /**************** listener ****************/
     //----------------------------------------------
-    //
+    //집안일등록버튼
     @objc func onClickRightBtn(sender: UIBarButtonItem) {
         if(checkValidation())
         {

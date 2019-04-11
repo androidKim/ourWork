@@ -32,8 +32,7 @@
 		DC181EB322522BCF008A2F49 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC181EB222522BCF008A2F49 /* user.swift */; };
 		DC293ED42253776A00AFD506 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC293ED32253776A00AFD506 /* GoogleService-Info.plist */; };
 		DC293ED52253776A00AFD506 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC293ED32253776A00AFD506 /* GoogleService-Info.plist */; };
-		DC620E4122510CE40017FFE9 /* addWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC620E4022510CE40017FFE9 /* addWorkViewController.swift */; };
-		DC620E4322510D030017FFE9 /* addPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC620E4222510D030017FFE9 /* addPersonViewController.swift */; };
+		DC620E4322510D030017FFE9 /* addFamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC620E4222510D030017FFE9 /* addFamilyViewController.swift */; };
 		DC620E45225114AB0017FFE9 /* tabSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC620E44225114AB0017FFE9 /* tabSettingViewController.swift */; };
 		DC620E47225115BE0017FFE9 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC620E46225115BE0017FFE9 /* loginViewController.swift */; };
 		DCEA56C2224FDEAF0039DAA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA56C1224FDEAF0039DAA5 /* AppDelegate.swift */; };
@@ -99,8 +98,7 @@
 		DC181EA622522AC6008A2F49 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DC181EB222522BCF008A2F49 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		DC293ED32253776A00AFD506 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		DC620E4022510CE40017FFE9 /* addWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addWorkViewController.swift; sourceTree = "<group>"; };
-		DC620E4222510D030017FFE9 /* addPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPersonViewController.swift; sourceTree = "<group>"; };
+		DC620E4222510D030017FFE9 /* addFamilyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addFamilyViewController.swift; sourceTree = "<group>"; };
 		DC620E44225114AB0017FFE9 /* tabSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabSettingViewController.swift; sourceTree = "<group>"; };
 		DC620E46225115BE0017FFE9 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		DCEA56BE224FDEAF0039DAA5 /* ourWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ourWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,8 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				DC181EA722522B18008A2F49 /* main */,
-				DC620E4022510CE40017FFE9 /* addWorkViewController.swift */,
-				DC620E4222510D030017FFE9 /* addPersonViewController.swift */,
+				DC620E4222510D030017FFE9 /* addFamilyViewController.swift */,
 				DC620E46225115BE0017FFE9 /* loginViewController.swift */,
 			);
 			path = ViewController;
@@ -580,7 +577,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC620E4122510CE40017FFE9 /* addWorkViewController.swift in Sources */,
 				DCEA56CA224FDEAF0039DAA5 /* ourWork.xcdatamodeld in Sources */,
 				DC620E45225114AB0017FFE9 /* tabSettingViewController.swift in Sources */,
 				DC17E0922250970F00704486 /* mainTabbarViewController.swift in Sources */,
@@ -592,7 +588,7 @@
 				DCFDBFB7225505E3009BF7CD /* work.swift in Sources */,
 				DC17E0AE2250B4A600704486 /* tabAddWorkViewController.swift in Sources */,
 				DC181EB322522BCF008A2F49 /* user.swift in Sources */,
-				DC620E4322510D030017FFE9 /* addPersonViewController.swift in Sources */,
+				DC620E4322510D030017FFE9 /* addFamilyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -194,7 +194,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }
     
     //----------------------------------------------
-    //alert(ok또는 cancel 이벤트없는 alert 공통사용 title, msg, ok, cancel 텍스트 전달)
+    //메인탭바 뷰컨트롤러들..alert(ok또는 cancel 이벤트없는 alert 공통사용 title, msg, ok, cancel 텍스트 전달)
     func showAlert(title:String, msg:String, ok:String, cancel:String){
         let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
         
