@@ -28,3 +28,5 @@
 "msg_its_my_key" = "I can not register me as a family.";
 "msg_not_exist_user" = "This user does not exist.";
 "msg_this_user_exist_family" = "The user has already set up a family (only one family member is allowed)";
+"msg_family_setting_complete" = "Family Settings are complete.";
+"msg_family_setting_fail" = "Family Settings Failed.";

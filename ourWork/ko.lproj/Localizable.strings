@@ -29,5 +29,7 @@
 "msg_its_my_key" = "나를 가족으로 등록할 수는 없어요.";
 "msg_not_exist_user" = "존재하지않는 사용자 입니다.";
 "msg_this_user_exist_family" = "해당 유저는 이미 설정된 가족이 있습니다.(1인 1가족만 가능합니다)";
+"msg_family_setting_complete" = "가족설정이 완료되었습니다.";
+"msg_family_setting_fail" = "가족설정에 실패하였습니다.";
 
 
