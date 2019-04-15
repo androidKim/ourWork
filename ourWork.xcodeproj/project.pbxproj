@@ -11,6 +11,7 @@
 		43B133CD7F3B792DA55851D4 /* Pods_ourWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85BE060802AC32CBA5C0540A /* Pods_ourWork.framework */; };
 		7650C40EDB84226E4AD52A7D /* Pods_ourWorkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA74CF459358CF75F74ADBF /* Pods_ourWorkUITests.framework */; };
 		DC0ED3712260AFEF00B32D81 /* family.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0ED3702260AFEF00B32D81 /* family.swift */; };
+		DC0FE5362264A0CD00875C92 /* familyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0FE5352264A0CD00875C92 /* familyCell.swift */; };
 		DC17E0922250970F00704486 /* mainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17E0912250970F00704486 /* mainTabbarViewController.swift */; };
 		DC17E0932250970F00704486 /* mainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17E0912250970F00704486 /* mainTabbarViewController.swift */; };
 		DC17E0942250970F00704486 /* mainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17E0912250970F00704486 /* mainTabbarViewController.swift */; };
@@ -84,6 +85,7 @@
 		9D93DBCB735DE993B8D65CEC /* Pods-ourWorkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ourWorkUITests.debug.xcconfig"; path = "Target Support Files/Pods-ourWorkUITests/Pods-ourWorkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC07CBBB225CBE0E0022DE8E /* ourWork.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ourWork.entitlements; sourceTree = "<group>"; };
 		DC0ED3702260AFEF00B32D81 /* family.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = family.swift; sourceTree = "<group>"; };
+		DC0FE5352264A0CD00875C92 /* familyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = familyCell.swift; sourceTree = "<group>"; };
 		DC17E0912250970F00704486 /* mainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTabbarViewController.swift; sourceTree = "<group>"; };
 		DC17E0A12250AD4400704486 /* baseline_people_black_24pt_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_people_black_24pt_2x.png; sourceTree = "<group>"; };
 		DC17E0A22250AD4400704486 /* baseline_people_black_24pt_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_people_black_24pt_3x.png; sourceTree = "<group>"; };
@@ -179,6 +181,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DC0FE5342264A0A600875C92 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DC0FE5352264A0CD00875C92 /* familyCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		DC17E0952250A8E200704486 /* res */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +221,7 @@
 		DC17E09A2250A93900704486 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				DC0FE5342264A0A600875C92 /* Cell */,
 				DC17E0992250A92C00704486 /* ViewController */,
 			);
 			path = UI;
@@ -585,6 +596,7 @@
 				DC17E0922250970F00704486 /* mainTabbarViewController.swift in Sources */,
 				DC620E47225115BE0017FFE9 /* loginViewController.swift in Sources */,
 				DCEA56F3224FE5880039DAA5 /* tabWrokListViewContoller.swift in Sources */,
+				DC0FE5362264A0CD00875C92 /* familyCell.swift in Sources */,
 				DCEA56C2224FDEAF0039DAA5 /* AppDelegate.swift in Sources */,
 				DC0ED3712260AFEF00B32D81 /* family.swift in Sources */,
 				DCFDBFBA22550656009BF7CD /* table.swift in Sources */,

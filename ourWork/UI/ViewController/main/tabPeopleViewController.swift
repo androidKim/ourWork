@@ -13,12 +13,12 @@ import Firebase
 import FirebaseDatabase
 import SwiftyJSON
 import UIKit
-class tabPeopleViewController:UIViewController{
+class tabPeopleViewController:UIViewController, UITableViewDelegate, UITableViewDataSource{
     /**************** member ****************/
     var mAppDelegate: AppDelegate!//앱딜리게이트
     var mDbRef: DatabaseReference!//firebase database
     var m_bFamilyExist:Bool = false
-    
+    var m_arrMember = [String]()
     /**************** Controller ****************/
     @IBOutlet weak var m_RightBarButton: UIBarButtonItem!//가족등록화면으로 이동
     @IBOutlet weak var m_TableView: UITableView!
@@ -45,12 +45,33 @@ class tabPeopleViewController:UIViewController{
     override func viewWillDisappear(_ animated: Bool) {
         print("tabPeopleViewController viewWillDisappear")
     }
-
+    
+    /**************** tableview function ****************/
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.m_arrMember.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = self.m_TableView.dequeueReusableCell(withIdentifier:"familyCell", for: indexPath) as! familyCell
+        if cell == nil {
+            cell = familyCell.init(style: UITableViewCellStyle.default, reuseIdentifier: "familyCell")
+        }
+        let strUserKey = m_arrMember[indexPath.row]
+        cell.lb_UserKey?.text = strUserKey
+        return cell
+    }
+    
     /**************** user fucntion ****************/
     //----------------------------------------------
     //레이아웃 초기설정
     func initLayout(){
-        self.m_RightBarButton.action = #selector(onClickRightBtn(sender:))//가족등록 버튼이벤트 연결
+        //테이블뷰 세팅
+        self.m_TableView.delegate = self
+        self.m_TableView.dataSource = self
+        
+        self.m_TableView.rowHeight = UITableViewAutomaticDimension
+        //가족등록 버튼이벤트 연결
+        self.m_RightBarButton.action = #selector(onClickRightBtn(sender:))
     }
     //----------------------------------------------
     //
@@ -68,7 +89,7 @@ class tabPeopleViewController:UIViewController{
                             let family_key = value?["family_key"] as! String
                             if(!family_key.elementsEqual(""))
                             {
-                                self.existFamily()
+                                self.existFamily(family_key: family_key)
                             }
                             else
                             {
@@ -102,9 +123,42 @@ class tabPeopleViewController:UIViewController{
     }
     //----------------------------------------------
     //
-    func existFamily(){
+    func existFamily(family_key:String){
         m_bFamilyExist = true
-        self.m_TableView.isHidden = false//
+    
+        //get member list
+        var dbRef = mDbRef.child("tb_family").child(family_key)
+        dbRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            if(snapshot.exists())//
+            {
+                let value = snapshot.value as? NSDictionary
+                if value?["member_list"] != nil{
+                    let memeber_list = value?["member_list"] as! [String]
+                    for i in 0...memeber_list.count-1 {
+                        self.m_arrMember.append(memeber_list[i])
+                    }
+                    
+                    DispatchQueue.main.async {
+                        self.m_TableView.isHidden = false//disable tableview
+                        self.m_TableView.reloadData()//테이블뷰 새로고침
+                    }
+                }
+            }
+            else//
+            {
+                self.m_TableView.isHidden = true//disable tableview
+            }
+        }) { (error) in
+            print(error.localizedDescription)
+            
+            self.m_TableView.isHidden = true//disable tableview
+            //서버통신실패 alert
+            var title:String = NSLocalizedString("api_fail", comment: "")
+            var msg:String = NSLocalizedString("msg_api_error", comment: "")
+            var ok:String = NSLocalizedString("ok", comment: "")
+            var cancel:String = ""
+            self.mAppDelegate.showAlert(title: title, msg: msg, ok: ok, cancel: cancel)
+        }
     }
     
     //----------------------------------------------
